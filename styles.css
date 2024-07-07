@@ -1,0 +1,136 @@
+* {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+		line-height: 1.5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#navbar {
+    background-color: ivory;
+    width: 100%;
+    border-bottom: 2px solid #696868;
+		
+}
+
+#navbar li {
+    color: #696868;
+    border-top: 2px solid #696868;
+    list-style: none;
+		padding: 10px 0 0 0;
+}
+
+#navbar a {
+    display: block;
+    padding: 5px;
+    color: #696868;
+    text-decoration: none;
+    font-size: 17px;
+    transition: text-indent 0.4s ease-in-out;
+}
+
+#navbar a:hover {
+    font-weight: 600;
+    text-indent: 3px;
+}
+
+section {
+    margin-top: 30px;
+}
+
+p {
+    margin: 10px;
+}
+
+ol {
+    margin-left: 30px;
+}
+
+#main-doc {
+    margin: 0 auto;
+}
+
+header {
+    color: black;
+    margin: 20px 10px;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: wrap;
+    word-wrap: normal;
+    word-break: normal;
+    line-height: 1.8;
+    background-color: blanchedalmond;
+    padding: 0 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.hh-img {
+    width: 85%; 
+		margin: 10px 5px 0; 
+}
+
+.end {
+    margin-top: 40px;
+}
+
+footer {
+    padding: 30px;
+    color: #04800e;
+}
+
+footer a {
+	text-decoration: none;
+	color: #04800e;
+	font-weight: 620;
+}
+
+footer a:hover {
+	background-color: #d0ff84;
+}
+
+
+@media only screen and (min-width: 800px) {
+	
+    body {
+        flex-direction: row;
+    }
+    
+    #navbar {
+		width: 275px;
+		height: 100%;
+		text-align: center;
+		position: fixed;
+		overflow-y: scroll;	
+	}
+
+    #main-doc {
+		margin: 0 20px;
+		margin-left: 300px;
+	}
+
+	#navbar header, #navbar a {
+			padding-right: 5px;
+			text-align: center;
+		}
+    
+    #hh-img {
+        width: 80%;
+        margin-left: 10px;
+    }
+}
